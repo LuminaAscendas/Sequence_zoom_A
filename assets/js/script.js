@@ -388,7 +388,7 @@ function animation(argTop, argLeft, argWidth, argHeight, obj){
                left: argLeft,
                height: argHeight,
                width: argWidth
-            }, 1000);
+            }, 500);
      
       $('.reset-btn').fadeIn();
 	  $('.clickspot_selected').fadeIn(1500);

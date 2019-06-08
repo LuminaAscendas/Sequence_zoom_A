@@ -38,6 +38,7 @@ html, body {
 }
 body {
 	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	 font-family: SourceSansPro-Regular;
 	font-size: 14px;
 	color:#000;
   	margin: 0px 0px 0px 5px;
@@ -173,7 +174,7 @@ body {
     border-radius: 6px;
     background: #007098 none repeat scroll 0 0;
     box-sizing: border-box;
-    line-height: 27px;
+    line-height: 24px;
 	right: -305px;
     top: 490px;
 	z-index:150;
@@ -272,7 +273,7 @@ body {
     border-radius: 6px;
     background: #007098 none repeat scroll 0 0;
     box-sizing: border-box;
-    line-height: 27px;
+    line-height: 24px;
 }
 
 #text_container{
