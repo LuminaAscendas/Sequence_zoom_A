@@ -121,31 +121,6 @@ $(document).ready(function(){
 		} */
 		
    })
-	
-
-
-
-/* if (/MSIE 10/i.test(navigator.userAgent) || /MSIE 9/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent) ||/Edge\/\d./i.test(navigator.userAgent)) {
-    // This is internet explorer 9 or 11
-    	setTimeout(function(){
-			$('#focus_reader').html('').removeAttr('aria-label');
-			$('#direction_text').removeAttr('role').attr('aria-label','Directions: Click on each step number to zoom in on part of the graphic. Use the blue return arrow to go back to the overview.');
-
-		},10)		
-
-}
- 	var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-	if (/windows phone/i.test(userAgent)) {
-		return "Windows Phone";
-	}
-	if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-		 $('#direction_text').attr('role','text').attr('aria-label','Directions: Click on each step number to zoom in on part of the graphic. Use the blue return arrow to go back to the overview.'); 
-	} */
-	
-
-	
-
-	
 	/*----------------------------------------tab_functionality-----------------------------------*/
 
 	setTimeout(function(){
@@ -170,6 +145,14 @@ $(document).ready(function(){
 		
 	});
 	
+	$(".num-btn").mouseenter(function(){
+  		$(".num-btn").removeAttr('title');
+	});
+	$(".num-btn").mouseleave(function() {
+		for(i=1; i<=5; i++){
+			$("#spot"+i).attr("title", slider[i].slide_Title);
+		}
+	});
 	
 })
 
@@ -333,7 +316,9 @@ function zoomFunc(ev,args){
 		$('.next-btn').css({'pointer-events':'auto','opacity':'1'})
 		
 		$('#head_ing').html(slider[idValZ].slide_Title);
-	  $('#head_ing').attr('aria-label', slider[idValZ].slide_Title);
+		$('#head_ing').attr('aria-label', slider[idValZ].slide_Title);
+		//$('#spot'+idValZ).attr('title', slider[idValZ].slide_Title)
+		
 		
 		 switch(idValZ)
 		  {
