@@ -145,14 +145,14 @@ $(document).ready(function(){
 		
 	});
 	
-	$(".num-btn").mouseenter(function(){
+/* 	$(".num-btn").mouseenter(function(){
   		$(".num-btn").removeAttr('title');
 	});
 	$(".num-btn").mouseleave(function() {
 		for(i=1; i<=5; i++){
 			$("#spot"+i).attr("title", slider[i].slide_Title);
 		}
-	});
+	}); */
 	
 })
 
