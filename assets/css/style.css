@@ -66,8 +66,9 @@ body {
 }
 
 .dir_text{
-	font-family: "SourceSansPro-Bold";
+	font-family: "SourceSansPro-Regular";
 	font-size: 14px;
+	font-weight:normal;
 }
 
 .titleText {
