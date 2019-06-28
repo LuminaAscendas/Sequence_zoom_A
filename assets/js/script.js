@@ -12,7 +12,17 @@ $(document).ready(function(){
 	$("#pageImage").mouseleave(function() {
   		$("#pageImage").removeAttr('title');
 	});
-
+	
+	
+	$("#imageDiv").mouseenter(function(){
+		$("#imageDiv").attr("title","Thermal Power Plant");
+	});
+	$("#imageDiv").mouseleave(function() {
+  		$("#imageDiv").removeAttr('title');
+	});
+	
+	
+	
 		/*Begin page */
 	
 	$('#begin_btn').off('click').on('click',function(){
